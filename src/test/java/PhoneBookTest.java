@@ -19,7 +19,7 @@ public class PhoneBookTest {
     @Test
     public void testFindByNumber() {
         phoneBook.add("Вася", "123-345");
-        assertEquals("Васasя", phoneBook.findByNumber("12323-345"));
+        assertEquals("Вася", phoneBook.findByNumber("123-345"));
         assertNull(phoneBook.findByNumber("999-999")); // Проверка на отсутствие контакта
     }
 
